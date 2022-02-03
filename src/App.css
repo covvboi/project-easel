@@ -1,38 +1,145 @@
+.btn-size {
+  width: 100%;
+}
+
 .App {
+  
+  height: 100vh;
+  background-image: url('./white-fabric.jpg');
+  background-repeat : no-repeat;
+  background-size: cover;
+
+}
+
+.navbar {
+  
+  padding: auto;
+  background-image: url('./nav-white-fabric.jpg');
+  background-size: cover ;
+
+}
+
+.style-1 {
+   font-weight: bold;
+}
+
+.find-pw {
+  font-size: 13px;
+  text-align: right;
+}
+
+.black-login {
+  width : 100%;
+  height : 100%;
+  position : fixed;
+  background : rgba(0,0,0,0.5);
+  z-index : 5;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.white-login {
+  background: white;
+  width: 70%;
+  height: 31%;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ID-8 {
+  margin-bottom: -15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.close-button{
+  float: left;
 }
 
-.App-link {
-  color: #61dafb;
+.remem-id{
+  float: left;
+  margin: 10px auto;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-button{
+  margin: 10px auto;
+  float: right;
+}
+
+.id-remem{
+  font-size: 12px;
+  float: left;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.bg-regist{
+  
+  padding: auto;
+  background-size: cover; 
+  width : 100%;
+  height : 100%;
+  position : fixed;
+  background : rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+
+
+.white-regist{
+  background: white;
+  width: 500px;
+  height: 80%;
+  position:relative;
+  margin: 70px auto;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+/* .styled-link{
+  text-decoration: none;
+  color: gray;
+} */
+
+.regist-text-styled{
+  text-decoration: none;
+  color: gray;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.regist-text-styled2{
+  text-decoration: none;
+  color: gray;
+  float: right;
+  font-size: 12px;
+}
+
+.ID-1{
+  margin-top: 8%;
+  margin-bottom: 20px;
+}
+
+.PW-1{
+  margin-top: 0px;
+}
+
+.PW-2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.EMAIL{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.NICKNAME {
+  margin-bottom: 40px;
 }
