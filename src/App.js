@@ -10,7 +10,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 function App() {
 
-  let [modal, modalCh] = useState(false);   //modal창의 on off 스위치의 역할인 state
+  let [Modal, setModal] = useState(false);   //modal창의 on off 스위치의 역할인 state
 
 
   return (
@@ -19,8 +19,8 @@ function App() {
      <Route exact path="/">  
     
             {
-              modal === true
-              ? <LoginModal modalCh={modalCh} ></LoginModal>
+              Modal === true
+              ? <LoginModal setModal={setModal} ></LoginModal>
               : null
             } 
 
@@ -40,7 +40,7 @@ function App() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1"><span onClick={()=>{modalCh(true)}}><Button className="btn-size" variant="outline-secondary">로그인</Button></span></Nav.Link>
+                <Nav.Link href="#action1"><span onClick={()=>{setModal(true)}}><Button className="btn-size" variant="outline-secondary">로그인</Button></span></Nav.Link>
                 <Nav.Link href="#action2"><Link to="/register"><Button className="btn-size" variant="outline-secondary">EASEL 회원가입</Button></Link></Nav.Link>
                 <a className="find-pw">아이디/비밀번호찾기</a>
 
@@ -97,7 +97,7 @@ function LoginModal(props){
   return(
     <div className="black-login">
     <div className="white-login">
-    <span onClick={()=>{props.modalCh(false)}}><CloseButton className="close-button"/></span>
+    <span onClick={()=>{props.setModal(false)}}><CloseButton className="close-button"/></span>
       <h2>Sign Up</h2>
       &nbsp;
       <FormControl
