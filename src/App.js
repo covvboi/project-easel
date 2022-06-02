@@ -1,10 +1,43 @@
 import React, { useState } from 'react';
-import { Button,Navbar,Nav,NavDropdown,Form,FormControl,Container,Offcanvas, CloseButton } from 'react-bootstrap';
-import styled from 'styled-components'
+import { Link, Route } from 'react-router-dom';
+import { Button, Navbar, Nav, Form, FormControl, Container, Offcanvas, CloseButton } from 'react-bootstrap';
 import './App.css';
+
+import Mainin from './Mainin';
+
 import Register from './Register.js';
 
-import { Link, Route, Switch } from 'react-router-dom';
+/////////////////////////////////////////////// Post 
+import PostA from './collegeA/PostA.js';
+import PostB from './collegeB/PostB.js';
+import PostC from './collegeC/PostC.js';
+//////////////////////////////////////////////  
+
+///////////////////////////////////////////////  
+import MainViewA from './collegeA/MainViewA.js';
+import MainViewB from './collegeB/MainViewB.js';
+import MainViewC from './collegeC/MainViewC.js';
+/////////////////////////////////////////////// 
+
+//////////////////////////////////////////////
+import EditA from './collegeA/EditA'
+import EditB from './collegeB/EditB'
+import EditC from './collegeC/EditC'
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+import CommentPageA from './collegeA/CommentPageA'
+import CommentPageB from './collegeB/CommentPageB'
+import CommentPageC from './collegeC/CommentPageC'
+//////////////////////////////////////////////
+
+
+import MyPageA from './collegeA/MyPageA';
+import MyPageB from './collegeB/MyPageB';
+import MyPageC from './collegeC/MyPageC';
+
+
+import UniAuth from './UniAuth';
 
 
 
@@ -14,9 +47,9 @@ function App() {
 
 
   return (
-    <div className="App">
-           {/* 리엑트라우터는 겹치는 페이지 다 보여준다 그러니까 exapt 써줘야 됌 */}
-     <Route exact path="/">  
+  <div className="App">
+  {/* 리엑트라우터는 겹치는 페이지 다 보여준다 그러니까 exact 써줘야 됌 */}
+  <Route exact path="/">  
     
             {
               Modal === true
@@ -24,59 +57,38 @@ function App() {
               : null
             } 
 
-
      <Navbar className="navbar" bg="whight" expand={false}>
         <Container fluid>
           <Navbar.Brand href="#">EASEL</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           
-              <Navbar.Offcanvas
-                id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel"
-                placement="end"
-              >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">EASEL</Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1"><span onClick={()=>{setModal(true)}}><Button className="btn-size" variant="outline-secondary">로그인</Button></span></Nav.Link>
-                <Nav.Link href="#action2"><Link to="/register"><Button className="btn-size" variant="outline-secondary">EASEL 회원가입</Button></Link></Nav.Link>
-                <a className="find-pw">아이디/비밀번호찾기</a>
+                <Navbar.Offcanvas
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                  placement="end"
+                >
 
-                {/* Drop down menu */}
-                {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown> */}
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title id="offcanvasNavbarLabel">EASEL</Offcanvas.Title>
+                </Offcanvas.Header>
 
-              </Nav>
-                &nbsp;
-                {/* <hr></hr>  나중에 이거 지우자*/}
-                <p className="style-1">우리학교 둘러보기</p>
-                
-               <Form className="d-flex">
-              
-                <FormControl
-                  type="search"
-                  placeholder="        찾으시는 캠퍼스를 검색하세요"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Offcanvas.Body>
+                <Offcanvas.Body className="login-box">
+                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Nav.Link href="#action1"><span onClick={()=>{setModal(true)}}><Button className="btn-size" variant="outline-secondary">로그인</Button></span></Nav.Link>
+                    <Nav.Link href="#action2"><Link to="/register"><Button className="btn-size" variant="outline-secondary">EASEL 회원가입</Button></Link></Nav.Link>
+                    <a className="find-pw">아이디/비밀번호찾기</a>
+
+                  </Nav>
+                    &nbsp;
+                    
+                </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
-      </Navbar>
+      </Navbar>      
+  </Route>
 
-      {/* <LoginModal></LoginModal> */}
-
-
+     <Route path="/mainin">
+        <Mainin/>
      </Route>
 
 
@@ -85,12 +97,95 @@ function App() {
      </Route>
 
 
+    
 
+     <Route path="/posta">
+       <PostA/>
+     </Route>
+
+     <Route path="/postb">
+       <PostB/>
+     </Route>
+
+     <Route path="/postc">
+       <PostC/>
+     </Route>
+
+
+
+
+   
+   
+     <Route path="/maina">
+       <MainViewA/>
+     </Route>
+
+     <Route path="/mainb">
+       <MainViewB/>
+     </Route>
+
+     <Route path="/mainc">
+       <MainViewC/>
+     </Route>
+
+
+
+     <Route path="/edit1/:id">
+       <EditA/>
+     </Route>
+
+     <Route path="/edit2/:id">
+       <EditB/>
+     </Route>
+
+     <Route path="/edit3/:id">
+       <EditC/>
+     </Route>
+
+
+
+
+     <Route path="/commentview1/:id">
+       <CommentPageA/>
+     </Route>
+
+     <Route path="/commentview2/:id">
+       <CommentPageB/>
+     </Route>
+
+     <Route path="/commentview3/:id">
+       <CommentPageC/>
+     </Route>
+
+
+
+
+     <Route path="/mypagea">
+       <MyPageA/>
+     </Route>
+
+     <Route path="/mypageb">
+       <MyPageB/>
+     </Route>
+
+     <Route path="/mypagec">
+       <MyPageC/>
+     </Route>
+
+
+
+
+
+     <Route path="/uniin">
+       <UniAuth/>
+     </Route>
+
+
+
+     
     </div>
   );
 }
-
-
 
 
 function LoginModal(props){
@@ -99,22 +194,27 @@ function LoginModal(props){
     <div className="white-login">
     <span onClick={()=>{props.setModal(false)}}><CloseButton className="close-button"/></span>
       <h2>Sign Up</h2>
+
+      <Form action="/login" method="POST">
       &nbsp;
       <FormControl
-        type="search"
+        type="text"
         placeholder="ID"
         className="ID-8" 
+        name="id"
       />
       &nbsp;
       <FormControl
-        type="search"
+        type="text"
         placeholder="PW"
         className="PW-9"
+        name="pw"
       />
       <input className="remem-id" type="checkbox"></input>
-      <Button className="login-button" variant="secondary">submit</Button>
+      <Button type="submit" className="login-button" variant="secondary">submit</Button>
       <a className="id-remem">아이디 저장</a>
-      
+      </Form>
+
     </div>
     </div>
   )

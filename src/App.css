@@ -5,7 +5,6 @@
 .App {
   
   height: 100vh;
-  background-image: url('./white-fabric.jpg');
   background-repeat : no-repeat;
   background-size: cover;
 
@@ -14,9 +13,25 @@
 .navbar {
   
   padding: auto;
-  background-image: url('./nav-white-fabric.jpg');
   background-size: cover ;
 
+}
+
+.logout-bt{
+  margin-left: 250px;
+}
+
+.login-box {
+  margin-top: 50%;
+}
+
+.college-list{
+  margin-top: 40px;
+  margin-left: -20px;
+}
+
+.list-href{
+  text-decoration-line: none;
 }
 
 .style-1 {
@@ -26,6 +41,7 @@
 .find-pw {
   font-size: 13px;
   text-align: right;
+
 }
 
 .black-login {
@@ -48,6 +64,15 @@
 
   
 }
+
+.reg-profile {
+  margin-top: -20px;
+  margin-bottom: 15px;
+  width: 80px;
+  border-radius: 70%;
+  
+}
+
 
 .ID-8 {
   margin-bottom: -15px;
@@ -99,12 +124,9 @@
   margin: 70px auto;
   padding: 50px;
   border-radius: 15px;
+  margin-top: 10px;
 }
 
-/* .styled-link{
-  text-decoration: none;
-  color: gray;
-} */
 
 .regist-text-styled{
   text-decoration: none;
@@ -142,4 +164,287 @@
 
 .NICKNAME {
   margin-bottom: 40px;
+}
+
+.regist-back{
+  float: right;
+  color: black;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.post-navbar {
+ 
+  text-decoration: none;
+  color: gray;
+}
+
+
+
+.post-button{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+
+}
+
+
+
+.drop-btn{
+  font-size: 2rem;
+  color:gray;
+  margin-left: 50%;
+}
+
+.imgPost {
+  margin-top: 1%;
+  margin-left: 0%;
+}
+
+
+
+.imgFile {
+  margin-top: -40%;
+  margin-right: 5%;
+  float: right;
+}
+
+
+.profile-box{
+
+  margin-top: 190px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+
+}
+
+
+.profile-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 70%;
+  margin-left: -30px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+
+.id-box1 {
+  margin-left: 30px;
+  margin-bottom: -30px;
+}
+
+.id-box2 {
+  margin-left: 343px;
+ 
+  
+}
+
+.heart-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.user-icon {
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  
+}
+
+.post-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+
+}
+
+.view-container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.main-view {
+
+  width: 45%;
+  float: right;
+  margin-right: 3%;
+  margin-top: -22%;
+
+}
+
+.main-text {
+  position: relative;
+  margin-top: 1%;
+  float: left;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.card-body{
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.my-card-body{
+  margin-left: -104%;
+  float: left;
+
+}
+
+.my-btn{
+  margin-left: 88%;
+  margin-top: -4%;
+  margin-bottom: -1%;
+}
+
+
+.my-text{
+  padding: 10px;
+}
+
+
+
+.my-main-view{
+  float: right;
+  margin-top: -24%;
+  margin-bottom: 30px;
+}
+
+.comment-from1{
+  margin-top: -30px;
+  margin-bottom: -15px;
+  
+
+}
+
+.comment-from3{
+  float: left;
+}
+
+.comment-submit{
+  float: right;
+  
+}
+
+.my-page-box{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+}
+
+.mypage-user-id{
+  margin-top: -45px;
+}
+
+.mypage-profile-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 70%;
+  overflow: hidden;
+  margin-left: 290px;
+  float: left;
+}
+
+.my-profile{
+  width: 80px;
+  border-radius: 70%;
+  margin-left: 42%;
+}
+
+.proimg-box{
+  width: 80px;
+  height: 80px;
+  border-radius: 70%;
+  margin-left: 290px;
+
+}
+
+.mypage-text{
+  width: 40%;
+  /* height: 100%; */
+  float: right;
+  margin-right: 140px;
+}
+
+.mypage-text-blue{
+  color: rgb(50, 110, 189);
+  margin-top: 0px;
+  padding: 10px;
+  height: 100%;
+  margin-left: -7%;
+  
+ 
+  
+}
+
+.mypage-text-red{
+  float: right;
+  margin-top: -48px;
+  margin-right: 140px;
+  color:rgb(221, 45, 39)
+  
+}
+
+.mypage-text-grey{
+  color: grey;
+
+}
+
+.school-auth-button{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.uni-box{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.regist-text-styled3{
+  text-decoration: none;
+  color: gray;
+  float: left;
+  font-size: 14px;
+  margin-top: 23px;
+}
+
+.btn-5{
+  
+  margin-top: 15px;
+  margin-left: 186px;
+}
+
+.uni-in{
+  margin-top: 30px;
+}
+
+.btn-6{
+  margin-top: 10px;
+}
+
+
+.comment-bg{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+.comment-box{
+  margin-left: 35%; 
+}
+
+.comment-head{
+  margin-left: 48%;
+  margin-top: 40px;
+}
+
+.post-num{
+  display: none;
 }
