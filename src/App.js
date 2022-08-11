@@ -37,6 +37,7 @@ import MyPageB from './collegeB/MyPageB';
 import MyPageC from './collegeC/MyPageC';
 
 
+
 import UniAuth from './UniAuth';
 
 
@@ -85,6 +86,8 @@ function App() {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>      
+
+      <h4 className="main-text-1">EASEL</h4>
   </Route>
 
      <Route path="/mainin">
@@ -182,6 +185,8 @@ function App() {
 
 
 
+
+
      
     </div>
   );
@@ -193,7 +198,7 @@ function LoginModal(props){
     <div className="black-login">
     <div className="white-login">
     <span onClick={()=>{props.setModal(false)}}><CloseButton className="close-button"/></span>
-      <h2>Sign Up</h2>
+      <h2>Sign In</h2>
 
       <Form action="/login" method="POST">
       &nbsp;

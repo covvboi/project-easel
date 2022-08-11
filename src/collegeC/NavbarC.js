@@ -10,11 +10,11 @@ function NavbarC() {
             
             <span>
                 <a href="/mypagec">
-                <img className="user-icon" src="imgfile/user.png"></img>
+                <img className="user-icon" src="/imgfile/user.png"></img>
                 </a>
 
                 <a href="/postc">
-                <img className="post-icon" src="imgfile/post.png"></img>
+                <img className="post-icon" src="/imgfile/post.png"></img>
                 </a>
 
             </span>

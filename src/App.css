@@ -3,18 +3,23 @@
 }
 
 .App {
-  
   height: 100vh;
   background-repeat : no-repeat;
   background-size: cover;
+}
+
+.main-tex-1{
+
+  font-size: 430px;
+  background: linear-gradient(to right, #ff5f5c, #2eadfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }
 
 .navbar {
-  
   padding: auto;
   background-size: cover ;
-
 }
 
 .logout-bt{
@@ -41,7 +46,6 @@
 .find-pw {
   font-size: 13px;
   text-align: right;
-
 }
 
 .black-login {
@@ -53,7 +57,6 @@
   text-align: center;
 }
 
-
 .white-login {
   background: white;
   width: 70%;
@@ -61,8 +64,6 @@
   margin: 100px auto;
   padding: 20px;
   border-radius: 10px;
-
-  
 }
 
 .reg-profile {
@@ -70,14 +71,11 @@
   margin-bottom: 15px;
   width: 80px;
   border-radius: 70%;
-  
 }
-
 
 .ID-8 {
   margin-bottom: -15px;
 }
-
 
 .close-button{
   float: left;
@@ -86,7 +84,6 @@
 .remem-id{
   float: left;
   margin: 10px auto;
- 
 }
 
 .login-button{
@@ -100,11 +97,9 @@
   margin: 10px;
   text-decoration: none;
   color: black;
-
 }
 
-.bg-regist{
-  
+.bg{
   padding: auto;
   background-size: cover; 
   width : 100%;
@@ -114,10 +109,8 @@
   text-align: center;
 }
 
-
-
 .white-regist{
-  background: white;
+  /* background: black; */
   width: 500px;
   height: 80%;
   position:relative;
@@ -126,7 +119,6 @@
   border-radius: 15px;
   margin-top: 10px;
 }
-
 
 .regist-text-styled{
   text-decoration: none;
@@ -174,21 +166,15 @@
 }
 
 .post-navbar {
- 
   text-decoration: none;
   color: gray;
 }
-
-
 
 .post-button{
   margin-top: 2%;
   margin-bottom: 2%;
   width: 100%;
-
 }
-
-
 
 .drop-btn{
   font-size: 2rem;
@@ -201,23 +187,17 @@
   margin-left: 0%;
 }
 
-
-
 .imgFile {
   margin-top: -40%;
   margin-right: 5%;
   float: right;
 }
 
-
 .profile-box{
-
   margin-top: 190px;
   margin-bottom: 30px;
   margin-left: 25px;
-
 }
-
 
 .profile-img{
   width: 40px;
@@ -228,7 +208,6 @@
   margin-bottom: 20px;
 }
 
-
 .id-box1 {
   margin-left: 30px;
   margin-bottom: -30px;
@@ -236,8 +215,6 @@
 
 .id-box2 {
   margin-left: 343px;
- 
-  
 }
 
 .heart-icon {
@@ -249,29 +226,24 @@
   width: 38px;
   height: 38px;
   margin-right: 10px;
-  
 }
 
 .post-icon {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-
 }
 
 .view-container {
   width: 100%;
   height: 100%;
-  
 }
 
 .main-view {
-
   width: 45%;
   float: right;
   margin-right: 3%;
   margin-top: -22%;
-
 }
 
 .main-text {
@@ -280,8 +252,6 @@
   float: left;
   width: 100%;
   height: 100%;
-
-
 }
 
 .card-body{
@@ -290,9 +260,15 @@
 }
 
 .my-card-body{
-  margin-left: -104%;
-  float: left;
+  margin-top: 5px;
+  margin-left: 14%;
+  /* float: left; */
+  /* position : absolute; */
+}
 
+.mypage-profille{
+  float: left;
+  
 }
 
 .my-btn{
@@ -301,12 +277,9 @@
   margin-bottom: -1%;
 }
 
-
 .my-text{
   padding: 10px;
 }
-
-
 
 .my-main-view{
   float: right;
@@ -317,8 +290,6 @@
 .comment-from1{
   margin-top: -30px;
   margin-bottom: -15px;
-  
-
 }
 
 .comment-from3{
@@ -327,28 +298,37 @@
 
 .comment-submit{
   float: right;
-  
 }
 
 .my-page-box{
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  /* background-color: rgb(138, 117, 117); */
+  height: 100%;
+  width: 100%;
   margin-top: 3%;
+  margin-left: 0%;
 }
 
 .mypage-user-id{
-  margin-top: -45px;
+  margin-top: -60px;
+  margin-left: 59%;
+ 
 }
 
-.mypage-profile-img{
+.mypage-user-img{
+  margin-left: -25%;
+  
+}
+
+
+
+/* .mypage-profile-img{
   width: 80px;
   height: 80px;
   border-radius: 70%;
   overflow: hidden;
   margin-left: 290px;
   float: left;
-}
+} */
 
 .my-profile{
   width: 80px;
@@ -364,40 +344,31 @@
 
 }
 
-.mypage-text{
-  width: 40%;
-  /* height: 100%; */
-  float: right;
-  margin-right: 140px;
-}
 
 .mypage-text-blue{
   color: rgb(50, 110, 189);
-  margin-top: 0px;
+  /* margin-top: 0px; */
   padding: 10px;
-  height: 100%;
-  margin-left: -7%;
-  
- 
+  /* height: 100%; */
+  margin-left: 21%;
+  position: absolute;
+  /* float: right; */
   
 }
 
 .mypage-text-red{
+  color:rgb(221, 45, 39);
   float: right;
-  margin-top: -48px;
-  margin-right: 140px;
-  color:rgb(221, 45, 39)
+  margin-top: 84px;
+ 
   
 }
 
-.mypage-text-grey{
-  color: grey;
 
-}
 
 .school-auth-button{
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin-top: 30%;
+margin-left: 57%;
 }
 
 .uni-box{
@@ -416,7 +387,6 @@
 }
 
 .btn-5{
-  
   margin-top: 15px;
   margin-left: 186px;
 }
@@ -428,7 +398,6 @@
 .btn-6{
   margin-top: 10px;
 }
-
 
 .comment-bg{
   width:100%;
@@ -448,3 +417,24 @@
 .post-num{
   display: none;
 }
+
+
+
+.mypage-text{
+  /* background:grey; */
+  height: 300px;
+  width: 40%;
+  margin-left: 27%;
+  border-radius: 15px;
+
+}
+
+.mypage-text1{
+  /* width: 10%; */
+  /* margin-left: 34%; */
+  margin-top: 60px;
+  /* height: 100%; */
+  /* float: right; */
+  /* margin-left: 2220px; */
+}
+

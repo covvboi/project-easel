@@ -13,29 +13,36 @@ function MyPageA() {
     <NavbarA></NavbarA>
       <div className="my-page-box">
    
-          <NowUserImg></NowUserImg>
-     
-          <div className="mypage-text">     
-              <div className="mypage-user-id">
-                <NowUser></NowUser>
+              <div className="mypage-text">  
+                 
+                  <div className='mypage-user-img'>
+                  <NowUserImg></NowUserImg>
+                  </div>
+
+                  <div className="mypage-user-id">
+                    <NowUser></NowUser>
+                  </div>
+          
+                  <ButtonGroup vertical className="mypage-text-blue">
+                  <ProfileChange/>
+                  <Button variant="link">닉네임 변경</Button>
+                  <Button variant="link">비밀번호 변경</Button>
+                  </ButtonGroup>
+
+                  <Form action="logout" method="POST">
+                  <Button variant="link" className="mypage-text-red" type="submit">로그아웃</Button>
+                  </Form>
+                  
+                  <Button className="school-auth-button" variant="outline-secondary" size="sm" href="/uniin">학교인증하기</Button>
+
               </div>
-      
-              <ButtonGroup vertical className="mypage-text-blue">
-              <ProfileChange/>
-              <Button variant="link">닉네임 변경</Button>
-              <Button variant="link">비밀번호 변경</Button>
-              </ButtonGroup>
 
-              <Form action="logout" method="POST">
-              <Button variant="link" className="mypage-text-red" type="submit">로그아웃</Button>
-              </Form>
-              
-              <Button className="school-auth-button" variant="outline-secondary" size="sm" href="/uniin">학교인증하기</Button>
-
-                <div className="container">
+              <div className="mypage-text1">
+                {/* <div className="container"> */}
                   <MyPageTextA></MyPageTextA>
-                </div>
-           </div>
+                {/* </div> */}
+              </div>
+
        </div>
    </div>
     )

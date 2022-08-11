@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button,Navbar,Nav,NavDropdown,Form,FormControl,Container,Offcanvas, CloseButton, Card, Placeholder, ListGroup } from 'react-bootstrap';
+import { Button,Navbar,Nav,Container } from 'react-bootstrap';
 
 function NavbarA() {
     return(
@@ -10,11 +10,11 @@ function NavbarA() {
             
             <span>
                 <a href="/mypagea">
-                <img className="user-icon" src="imgfile/user.png"></img>
+                <img className="user-icon" src="/imgfile/user.png"></img>
                 </a>
 
                 <a href="/posta">
-                <img className="post-icon" src="imgfile/post.png"></img>
+                <img className="post-icon" src="/imgfile/post.png"></img>
                 </a>
 
             </span>

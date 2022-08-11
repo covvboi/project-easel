@@ -10,11 +10,11 @@ function NavbarB() {
             
             <span>
                 <a href="/mypageb">
-                <img className="user-icon" src="imgfile/user.png"></img>
+                <img className="user-icon" src="/imgfile/user.png"></img>
                 </a>
 
                 <a href="/postb">
-                <img className="post-icon" src="imgfile/post.png"></img>
+                <img className="post-icon" src="/imgfile/post.png"></img>
                 </a>
 
             </span>

@@ -6,7 +6,7 @@ import './App.css';
 
 function Register(){
     return(
-        <div className="bg-regist">
+        <div className="bg">
         <div className="white-regist">
           <h4>회원정보</h4>
 
